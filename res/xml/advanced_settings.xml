@@ -7,7 +7,7 @@
     <!-- Statusbar -->
     <PreferenceScreen
         android:id="@+id/statusbar_settings"
-        android:fragment="com.android.settings.benzo.StatusBarSettings"
+        android:fragment="com.android.settings.advanced.StatusBarSettings"
         android:title="@string/statusbar_settings_title"
         android:icon="@drawable/ic_settings_statusbar"
         />
