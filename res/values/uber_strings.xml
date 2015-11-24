@@ -40,5 +40,10 @@
     <!-- Our advanced settings category title -->
     <string name="advanced_settings_title">Advanced settings</string>
     <string name="header_category_advanced">Advanced</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
 </resources>
 
