@@ -34,7 +34,7 @@ public class AdvancedSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.Advanced;
+        return MetricsEvent.TESTING;
     }
 
     @Override

@@ -64,7 +64,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.ADVANCED;
+        return MetricsEvent.TESTING;
     }
 
     @Override
