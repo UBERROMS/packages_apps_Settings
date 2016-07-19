@@ -19,6 +19,10 @@
     <string name="build_date">UBER build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor version</string>
+    <string name="vendor_version_default">Unknown</string>
+
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
