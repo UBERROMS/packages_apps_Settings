@@ -22,5 +22,8 @@
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
+
+    <!-- Phone info shortcut -->
+    <string name="device_info_title">Phone info</string>
 </resources>
 
