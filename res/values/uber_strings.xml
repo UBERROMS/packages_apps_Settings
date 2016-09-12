@@ -87,5 +87,9 @@
     <!-- Notification counters -->
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Settings suggestions  -->
+    <string name="disable_settings_suggestions_title">Disable suggestions</string>
+    <string name="disable_settings_suggestions_summary">Disable suggestions on the dashboard</string>
 </resources>
 
