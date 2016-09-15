@@ -23,8 +23,12 @@
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
 
-   <!-- Phone info shortcut -->
+    <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
+
+    <!-- Advanced Settings -->
+    <string name="header_category_advanced">Advanced</string>
+    <string name="advanced_settings_title">Advanced Settings</string>
 
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>

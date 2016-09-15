@@ -123,8 +123,16 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.wireless" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings$AdvancedSettings"
+            android:label="@string/header_category_advanced">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.advanced" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -172,6 +180,40 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!-- Advanced Settings -->
+
+        <activity android:name="Settings$AdvancedSettingsActivity"
+                android:label="@string/advanced_settings_title"
+                android:icon="@drawable/ic_xd_advanced"
+                android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="3">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.advanced" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.advanced.ProcessStatsSummary" />
+        </activity>
+ 
+       <!-- Keep compatibility with old shortcuts. -->
+        <activity android:name="Settings$AdvancedSettingsActivity"
+            android:label="@string/advanced_settings_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.advanced.AdvancedSettings" />
+        </activity>
+
+        <activity
+             android:name=".advanced.AdvancedSettings" />
 
         <!-- Wireless Controls -->
 
