@@ -82,8 +82,9 @@
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
-    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <!-- Custom fragment titles -->
     <string name="supersu_title">SuperSU</string>
+    <string name="substratum_title">Substratum</string>
 
     <!-- Notification counters -->
     <string name="status_bar_notif_count_title">Show notification count</string>
