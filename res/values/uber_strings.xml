@@ -73,8 +73,6 @@
     <!--Volume keys -->
     <string name="button_settings_title">Buttons</string>
     <string name="volume_settings_title">Volume</string>
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
-    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
