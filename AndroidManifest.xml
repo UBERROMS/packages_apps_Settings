@@ -215,6 +215,24 @@
         <activity
              android:name=".advanced.AdvancedSettings" />
 
+        <activity android:name="Settings$KernelAdiutorActivity"
+                android:label="@string/kerneladiutor_title"
+                android:icon="@drawable/ic_xd_kernel"
+                android:taskAffinity="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.benzo" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.KernelAdiutor" />
+        </activity>
+
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"
