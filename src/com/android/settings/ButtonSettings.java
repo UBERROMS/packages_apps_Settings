@@ -24,7 +24,7 @@ public class ButtonSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.BENZO;
+        return MetricsEvent.TESTING;
     }
 
     @Override
