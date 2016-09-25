@@ -15,6 +15,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <string name="ok">OK</string>
+
     <!-- UBER build date-->
     <string name="build_date">UBER build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
@@ -92,5 +94,24 @@
 
     <!-- Button settings  -->
     <string name="button_settings_title">Buttons</string>
+
+    <!-- Notification/Battery lights -->
+    <string name="leds_settings_title">LED settings</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_title">Battery LED settings</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+    <string name="led_color_blue">Blue</string>
+
 </resources>
 
