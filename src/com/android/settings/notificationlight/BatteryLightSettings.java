@@ -66,7 +66,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DISPLAY;
+        return MetricsEvent.NOTIFICATION;
     }
 
     @Override
@@ -166,40 +166,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR, color);
         }
     }
-
-    /*@Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
-                .setAlphabeticShortcut('r')
-                .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetColors();
-                return true;
-        }
-        return false;
-    }
-
-    protected void resetColors() {
-        ContentResolver resolver = getContentResolver();
-        Resources res = getResources();
-
-        // Reset to the framework default colors
-        Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_LOW_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
-        Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_MEDIUM_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
-        Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_FULL_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
-        Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
-        refreshDefault();
-    }*/
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
