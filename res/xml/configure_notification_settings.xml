@@ -24,4 +24,5 @@
             android:key="lock_screen_notifications"
             android:title="@string/lock_screen_notifications_title"
             android:summary="%s" />
+
 </PreferenceScreen>
