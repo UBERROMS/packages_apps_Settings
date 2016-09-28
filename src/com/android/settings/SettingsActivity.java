@@ -224,8 +224,6 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String KA_FRAGMENT = "com.android.settings.KernelAdiutor";
 
-    private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
-
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -1023,13 +1021,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             Intent kernelAdiutorIntent = new Intent();
             kernelAdiutorIntent.setClassName("com.grarak.kerneladiutor", "com.grarak.kerneladiutor.activities.MainActivity");
             startActivity(kernelAdiutorIntent);
-            finish();
-            return null;
-        }
-        if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
-            Intent substratumIntent = new Intent();
-            substratumIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
-            startActivity(substratumIntent);
             finish();
             return null;
         }
