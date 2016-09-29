@@ -16,6 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="ok">OK</string>
+    <string name="reset">Reset</string>
     <string name="advanced">Advanced</string>
     <string name="profiles_add">Add...</string>
     <string name="profile_choose_app">Choose app</string>
