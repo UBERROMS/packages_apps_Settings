@@ -98,6 +98,7 @@
     <string name="button_settings_title">Buttons</string>
 
     <!-- Notification/Battery lights -->
+    <string name="notification_title">Notifications</string>
     <string name="leds_settings_title">LED settings</string>
 
     <!-- Battery light settings  -->
@@ -157,5 +158,21 @@
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
     <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+    
+    <!-- Battery styles -->
+    <string name="battery_title">Battery</string>
+    <string name="statusbar_battery_summary">Set style of status bar battery display</string>
+    <string name="battery_style_title">Style</string>
+    <string name="battery_percent_title">Show percent</string>
+    <string name="battery_percent_none">Never</string>
+    <string name="battery_percent_always">Always</string>
+    <string name="battery_percent_expanded">Expanded</string>
+    <string name="statusbar_percent_inside_title">Percent overlay</string>
+    <string name="statusbar_percent_inside_summary">Display percent on top of the the battery image</string>
+    <string name="statusbar_charging_image_title">Charging indicator</string>
+    <string name="statusbar_category_charging_title">Charging</string>
+    <string name="statusbar_charging_image_summary">Display bolt indicator while charging. Hides percent overlay</string>
+    <string name="battery_enable_title">Show battery</string>
+
 </resources>
 
