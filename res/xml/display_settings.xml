@@ -32,20 +32,11 @@
                 settings:keywords="@string/keywords_display_auto_brightness"
                 android:summary="@string/auto_brightness_summary" />
 
-        <com.android.settings.preference.SystemSettingSwitchPreference
+        <com.android.settings.preference.CustomSystemSettingSwitchPreference
                 android:key="disable_settings_suggestions"
                 android:title="@string/disable_settings_suggestions_title"
                 android:summary="@string/disable_settings_suggestions_summary"
                 android:defaultValue="false" />
-
-        <!-- Hide night mode for now
-        <ListPreference
-            android:key="night_mode"
-            android:title="@string/night_mode_title"
-            settings:keywords="@string/keywords_display_night_mode"
-            android:summary="@string/night_mode_summary"
-            android:entries="@array/night_mode_entries"
-            android:entryValues="@array/night_mode_values" /> -->
 
         <com.android.settingslib.RestrictedPreference
                 android:key="wallpaper"
