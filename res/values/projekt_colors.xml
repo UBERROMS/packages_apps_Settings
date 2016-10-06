@@ -23,14 +23,4 @@
     <color name="dashboard_category_title_background">@color/card_background</color>
     <color name="selectable_card_background">@color/card_background</color>
 
-    <!-- Condition card colors -->
-    <color name="condition_card_background_color">?android:attr/colorAccent</color>
-    <color name="condition_card_icon_color">?android:attr/textColorPrimaryInverse</color>
-    <color name="condition_card_title_text_color">?android:attr/textColorPrimaryInverse</color>
-    <color name="condition_card_expander_color">?android:attr/textColorPrimaryInverse</color>
-    <color name="condition_card_summary_text_color">?android:attr/textColorPrimaryInverse</color>
-    <color name="condition_card_divider_color">@android:color/white</color>
-    <color name="condition_card_first_button_text_color">?android:attr/textColorPrimaryInverse</color>
-    <color name="condition_card_second_button_text_color">?android:attr/textColorPrimaryInverse</color>
-
 </resources>
