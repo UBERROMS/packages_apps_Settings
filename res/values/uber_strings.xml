@@ -38,5 +38,9 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+
+    <!-- Our advanced settings category title -->
+    <string name="advanced_settings_title">Advanced Settings</string>
+    <string name="header_category_advanced">Advanced</string>
 </resources>
 

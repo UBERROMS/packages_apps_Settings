@@ -23,12 +23,6 @@
             android:title="@string/battery_saver"
             android:fragment="com.android.settings.fuelgauge.BatterySaverSettings" />
 
-        <PreferenceScreen
-                android:key="statusbar_battery"
-                android:title="@string/battery_title"
-                android:summary="@string/statusbar_battery_summary"
-                android:fragment="org.omnirom.omnigears.interfacesettings.StatusbarBatterySettings" />
-
         <com.android.settings.fuelgauge.BatteryHistoryPreference
             android:key="battery_history" />
 
