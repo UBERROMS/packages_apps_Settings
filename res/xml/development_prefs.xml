@@ -90,7 +90,7 @@
         android:title="@string/color_temperature"
         android:summary="@string/color_temperature_desc" />
 
-    <SwitchPreference
+    <!-- <SwitchPreference
         android:key="ota_disable_automatic_update"
         android:title="@string/ota_disable_automatic_update" />
 
@@ -98,7 +98,7 @@
         android:key="demo_mode"
         android:title="@string/demo_mode">
         <intent android:action="com.android.settings.action.DEMO_MODE" />
-    </PreferenceScreen>
+    </PreferenceScreen> -->
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
