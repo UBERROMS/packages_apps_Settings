@@ -18,11 +18,16 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/advanced_settings_title" >
 
-    <PreferenceScreen
+    <PreferenceCategory
+        android:key="Status Bar"
+        android:title="@string/omni_status_bar" >
+
+        <PreferenceScreen
                 android:key="statusbar_battery"
                 android:title="@string/battery_title"
                 android:summary="@string/statusbar_battery_summary"
                 android:fragment="org.omnirom.omnigears.interfacesettings.StatusbarBatterySettings" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="leds"
@@ -37,6 +42,31 @@
                 android:key="notification_light"
                 android:title="@string/omni_notification_light_settings"
                 android:fragment="org.omnirom.omnigears.batterylight.NotificationLightSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="buttons"
+        android:title="@string/omni_buttons" >
+
+        <CheckBoxPreference
+            android:key="button_volume_wake_screen"
+            android:title="@string/button_volume_wake_title"
+            android:summary="@string/button_volume_wake_summary"
+            android:persistent="false"
+            android:disableDependentsState="true" />
+
+        <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+            android:key="volume_button_music_control"
+            android:title="@string/volume_button_music_control_title"
+            android:summary="@string/volume_button_music_control_summary"
+            android:dependency="button_volume_wake_screen"/>
+
+        <CheckBoxPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary"
+            android:persistent="false"/>
 
     </PreferenceCategory>
 
