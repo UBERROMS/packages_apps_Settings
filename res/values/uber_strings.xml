@@ -40,7 +40,7 @@
     <string name="supersu_title">SuperSU</string>
 
     <!-- Our advanced settings category title -->
-    <string name="advanced_settings_title">Advanced Settings</string>
+    <string name="advanced_settings_title">Advanced settings</string>
     <string name="header_category_advanced">Advanced</string>
 </resources>
 
