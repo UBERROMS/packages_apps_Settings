@@ -16,21 +16,46 @@
 
 package com.android.settings.advanced;
 
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.res.Resources;
+import android.content.Context;
+import android.media.AudioSystem;
+import android.os.Bundle;
+import android.os.Vibrator;
+import android.support.v7.preference.CheckBoxPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.ListPreference;
+import android.support.v14.preference.SwitchPreference;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
 
+import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+
+import static android.provider.Settings.System.VOLUME_BUTTON_WAKE;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.List;
 
-public class AdvancedSettings extends SettingsPreferenceFragment {
+public class AdvancedSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+    private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
+    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+
+    private CheckBoxPreference mVolumeWake;
+    private CheckBoxPreference mSwapVolumeButtons;
 
     @Override
     protected int getMetricsCategory() {
@@ -41,6 +66,37 @@ public class AdvancedSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final ContentResolver resolver = getContentResolver();
+
         addPreferencesFromResource(R.xml.advanced_settings);
+
+        mVolumeWake = (CheckBoxPreference) findPreference(BUTTON_VOLUME_WAKE);
+        mVolumeWake.setChecked(Settings.System.getInt(resolver,
+            Settings.System.VOLUME_BUTTON_WAKE, 0) != 0);
+
+        mSwapVolumeButtons = (CheckBoxPreference) findPreference(SWAP_VOLUME_BUTTONS);
+        mSwapVolumeButtons.setChecked(Settings.System.getInt(resolver,
+            Settings.System.SWAP_VOLUME_BUTTONS, 0) != 0);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mVolumeWake) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_BUTTON_WAKE, checked ? 1:0);
+            return true;
+        } else if (preference == mSwapVolumeButtons) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SWAP_VOLUME_BUTTONS, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        // Hello
+        return true;
     }
 }
