@@ -139,4 +139,15 @@
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
 
+        <!-- GCC used -->
+        <Preference android:key="build_compiler_gcc"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_compiler_gcc"
+                android:summary="@string/build_compiler_default" />
+
+        <!-- Clang used -->
+        <Preference android:key="build_compiler_clang"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_compiler_clang"
+                android:summary="@string/build_compiler_default" />
 </PreferenceScreen>

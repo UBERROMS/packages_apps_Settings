@@ -15,9 +15,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- UBER build date-->
+    <!-- UBER build date -->
     <string name="build_date">UBER build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- UBER Compiler -->
+    <string name="build_compiler_gcc">GCC version</string>
+    <string name="build_compiler_default">Unknown</string>
+
+    <!-- UBER Compiler -->
+    <string name="build_compiler_clang">Clang version</string>
+    <string name="build_compiler_default">Unknown</string>
 
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
