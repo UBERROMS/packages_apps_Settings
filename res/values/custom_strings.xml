@@ -83,6 +83,10 @@
     <string name="zen_mode_none_category">No interruptions</string>
     <string name="zen_mode_alarms">Allow alarms</string>
 
+    <!-- Gesture Settings -->
+    <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+    <string name="double_twist_for_camera_mode_summary_pn">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app</string>
+
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volumes</string>
     <string name="notification_volume_option_title">Notification volume</string>
