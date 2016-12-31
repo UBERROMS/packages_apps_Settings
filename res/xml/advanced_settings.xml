@@ -24,9 +24,9 @@
 
         <PreferenceScreen
                 android:key="statusbar_battery"
-                android:title="@string/battery_title"
-                android:summary="@string/statusbar_battery_summary"
-                android:fragment="org.omnirom.omnigears.interfacesettings.StatusbarBatterySettings" />
+                android:title="@string/status_bar_battery_style_category"
+                android:summary="@string/status_bar_battery_style_summary"
+                android:fragment="org.omnirom.omnigears.interfacesetings.StatusbarBatteryStyle" />
 
 	<PreferenceScreen
 		android:fragment="org.omnirom.omnigears.ui.ClockSettings"
