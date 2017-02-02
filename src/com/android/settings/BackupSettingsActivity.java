@@ -34,7 +34,7 @@ import java.net.URISyntaxException;
 /**
  * A trampoline activity used to launch the configured Backup activity.
  * This activity used the theme NoDisplay to minimize the flicker that might be seen for the launch-
- * finsih transition.
+ * finish transition.
  */
 public class BackupSettingsActivity extends Activity {
     private static final String TAG = "BackupSettingsActivity";
